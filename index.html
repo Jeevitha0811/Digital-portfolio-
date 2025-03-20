@@ -8,40 +8,40 @@
             margin: 0;
             padding: 0;
             background-color: #84a6e9;
+            text-align: centre; /* centers everything*/
         }
 
         header {
             background-color: #941919;
             color: #fff;
-            text-align: center;
             padding: 2rem 0;
-            position: relative; /* Add this */
+            position: relative; 
         }
 
-        .header-content h1 {
-            font-size: 2.5rem;
+        . profile picture {
+            width: 150px;/*  Adjust size */
+            height: 150px;
+            border-radius: 50% /* Circular shape */
+            object-fit: cover;
+            border: 4px solid white; /* Optional border */
+            display: block;
+            margin: 0 auto; /* Centers the image */
         }
-
-        /* Add styles for the round profile picture */
-        .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
-        }
-
+        
+        h1 {
+            margin-top: 10px; /* Adjust spacing*/
+        } 
+        
         nav {
             background-color: #333;
             color: #fff;
-            text-align: center;
+            padding: 10px 0;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
 
         nav ul li {
@@ -52,6 +52,7 @@
         nav ul li a {
             text-decoration: none;
             color: #fff;
+            font-weight: bold;
         }
 
         .section-content {
@@ -60,7 +61,7 @@
             margin: 1rem;
             border-radius: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
+            width: 80%;
         }
 
         .download-button {
@@ -71,7 +72,6 @@
             border-radius: 20px;
             display: inline-block;
             margin-top: 10px;
-            align-self: center;
         }
 
         .download-button:hover {
@@ -83,18 +83,21 @@
             padding: 1rem 0;
             background-color: #333;
             color: #fff;
+            margin-top: 20px;
         }
 
         ul {
             list-style-type: disc;
             padding-left: 20px;
+            text-align: left;
+            display: inline-block;
     </style>
 </head>
 <body>
     <header>
         <div
-        <!--Add you profile picture here-->
-       <img src="IMG_20250319_182312.jpg"alt="" height="280" width="300">
+        
+            <img src="IMG_20250319_182312.jpg" alt="Profile Picture" class="profile-picture">
        <h1>JEEVITHA E</h1>
             <p>Am Computer Application Student</p>
             </div>
